@@ -1,0 +1,42 @@
+{
+	"name": "clone-pilot",
+	"displayName": "Clone Pilot",
+	"description": "Clone Pilot - A bad version of Github Copilot",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:clone-pilot.openClonePilot"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [{
+			"command": "clone-pilot.openClonePilot",
+			"title": "Open Clone Pilot"
+		}]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.57.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"js-beautify": "^1.14.0"
+	}
+}
