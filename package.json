@@ -7,7 +7,7 @@
 		"type": "git",
 		"url": "https://github.com/Goel25/ClonePilotExtension.git"
 	},
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.57.0"
 	},
@@ -19,10 +19,12 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "clone-pilot.openClonePilot",
-			"title": "Open Clone Pilot"
-		}]
+		"commands": [
+			{
+				"command": "clone-pilot.openClonePilot",
+				"title": "Open Clone Pilot"
+			}
+		]
 	},
 	"scripts": {
 		"lint": "eslint .",
