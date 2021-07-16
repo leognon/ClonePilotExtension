@@ -51,8 +51,8 @@ function activate(context) {
 			}
 
 			try {
-				const response = await axios.get(`http://127.0.0.1:3000/getFunction/${word}`); //Get the functions for that word
-				const fns = response.data.sort((a, b) => b.postScore - a.postScore); //Show the highset score first
+				const response = await axios.get(`https://clone-pilot.herokuapp.com/getFunction/${word}`); //Get the functions for that word
+				const fns = response.data.sort((a, b) => b.postScore - a.postScore); //Show the highest score first
 				const content = getClonePilotText(fns, word);
 				return content;
 			} catch (err) {
@@ -69,6 +69,7 @@ function activate(context) {
 		let loadingUri = vscode.Uri.parse(`${myScheme}:Clone Pilot?word=${word}&loading=true`, true);
 		await showUri(loadingUri); //Open a loading window
 		let uri = vscode.Uri.parse(`${myScheme}:Clone Pilot?word=${word}&loading=false`, true);
+		//TODO If the uri has already been loaded, the codelense breaks
 		await showUri(uri); //Show the actual content, once got from the server
 	}
 

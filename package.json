@@ -1,7 +1,12 @@
 {
 	"name": "clone-pilot",
+	"publisher": "Goel",
 	"displayName": "Clone Pilot",
 	"description": "Clone Pilot - A bad version of Github Copilot",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Goel25/ClonePilotExtension.git"
+	},
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.57.0"
