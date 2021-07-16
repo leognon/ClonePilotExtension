@@ -5,7 +5,7 @@ To open the ClonePilot window, run the "Open Clone Pilot" command.
 
 # Features
 
-\!\[The Clone Pilot Window\]\(assets/demo.gif\)
+![The Clone Pilot Window](assets/demo.gif)
 
 # Contribute
 [VSCode Extension](https://github.com/Goel25/ClonePilotExtension)
