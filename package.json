@@ -8,7 +8,7 @@
 		"type": "git",
 		"url": "https://github.com/Goel25/ClonePilotExtension.git"
 	},
-	"version": "1.0.1",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.57.0"
 	},
