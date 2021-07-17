@@ -15,3 +15,6 @@ Check out this youtube video explaining how I made it!
 [VSCode Extension](https://github.com/Goel25/ClonePilotExtension)
 
 [Server](https://github.com/Goel25/ClonePilot)
+
+# Credits
+Logo by Grant Mortenson (https://dribbble.com/shots/5607692-Clone-Phase-1)

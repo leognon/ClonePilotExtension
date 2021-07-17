@@ -2,6 +2,7 @@
 	"name": "clone-pilot",
 	"publisher": "Goel",
 	"displayName": "Clone Pilot",
+	"icon": "assets/logo.png",
 	"description": "Clone Pilot - A bad version of Github Copilot",
 	"repository": {
 		"type": "git",
@@ -19,12 +20,10 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "clone-pilot.openClonePilot",
-				"title": "Open Clone Pilot"
-			}
-		]
+		"commands": [{
+			"command": "clone-pilot.openClonePilot",
+			"title": "Open Clone Pilot"
+		}]
 	},
 	"scripts": {
 		"lint": "eslint .",
